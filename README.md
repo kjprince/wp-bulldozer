@@ -5,13 +5,17 @@ Bulldoze that shit!
 
 
 1. Clone this repo and cd into it.
-2. Edit Vagrantfile to your liking. 
-3. Vagrant up.
+2. Add submodule, checkout wordpress version you want.
+3. Edit Vagrantfile to your liking. 
+4. Vagrant up.
+
 
 
 About the Base Box
 ==================
-Debian 7.4 - Wheezy
-Guest Additions 4.3.6
-nfsd installed - for NFS shared folders
-Static IP Set
+1. Debian 7.4 - Wheezy
+2. Guest Additions 4.3.6
+3. nfsd installed - for NFS shared folders
+4. RVM with Ruby 1.9.3-p484
+5. nginx 1.2.2
+
