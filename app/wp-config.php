@@ -42,7 +42,19 @@ define( 'NONCE_SALT',       'put your unique phrase here' );
 // Table prefix
 // Change this if you have multiple installs in the same database
 // ==============================================================
-$table_prefix  = 'wp_';
+$table_prefix  = 'rs1_';
+
+// ==================
+//SETUP MULTISITE? 
+// UNCOMMENT BELOW
+// ==================
+define('WP_ALLOW_MULTISITE', true);
+
+// ===================
+// Define Memory Limit
+// ===================
+define('WP_MEMORY_LIMIT', '128M');
+define('WP_MAX_MEMORY_LIMIT', '128M');
 
 // ================================
 // Language
