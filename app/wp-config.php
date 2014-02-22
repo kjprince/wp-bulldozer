@@ -50,6 +50,16 @@ $table_prefix  = 'rs1_';
 // ==================
 define('WP_ALLOW_MULTISITE', true);
 
+// ====================
+// SETUP MULTISITE 
+// ====================
+// define('MULTISITE', true);
+// define('SUBDOMAIN_INSTALL', true);
+// $base = '/';
+// define('DOMAIN_CURRENT_SITE', 'mu.rtcamp.net');
+// define('PATH_CURRENT_SITE', '/');
+// define('SITE_ID_CURRENT_SITE', 1);
+
 // ===================
 // Define Memory Limit
 // ===================
