@@ -17,5 +17,5 @@ About the Base Box
 2. Guest Additions 4.3.6
 3. nfsd installed - for NFS shared folders
 4. RVM with Ruby 1.9.3-p484
-5. nginx 1.2.2
+5. nginx 1.4.5
 
