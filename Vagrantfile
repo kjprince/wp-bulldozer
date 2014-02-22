@@ -6,22 +6,26 @@ VAGRANTFILE_API_VERSION = "2"
 
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
  
-    config.vm.box = "debian-wheezy64-wp"
-    config.vm.box_url = "https://dl.dropboxusercontent.com/s/xymcvez85i29lym/vagrant-debian-wheezy64.box"
+    config.vm.box = "jeter"
+    config.vm.box_url = "~/Downloads/debian-wheezy64.box"
+
+
     # https://www.dropbox.com/s/dtnkh8b0ajz71uh/debian-wheezy64.box
     # Use link above upgraded to wheezy 7.4 / updated guest additions and added nfsd for nfs
+    # the link below is the original box that I modified from vagrantbox.es - aka debian wheezy vanilla
+    # https://dl.dropboxusercontent.com/s/xymcvez85i29lym/vagrant-debian-wheezy64.box
     config.vm.network :forwarded_port, guest: 80, host: 8866
     config.vm.network :forwarded_port, guest: 3306, host: 8896
     config.vbguest.auto_update = true
     config.vm.network :private_network, ip: "192.168.33.10"
-    config.vm.synced_folder "./app", "/vagrant_data", type: "nfs"
+    config.vm.synced_folder ".", "/vagrant_data", type: "nfs"
    
     
 
 
      config.vm.provider :virtualbox do |vb|
         vb.memory = 2048
-        vb.name = "debian-wheezy64-vanilla"
+        vb.name = "debian-wheezy64-wp"
       end
 
   end
