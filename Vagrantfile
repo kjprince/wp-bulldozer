@@ -16,6 +16,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     # https://dl.dropboxusercontent.com/s/xymcvez85i29lym/vagrant-debian-wheezy64.box
     config.vm.network :forwarded_port, guest: 80, host: 8866
     config.vm.network :forwarded_port, guest: 3306, host: 8896
+    config.vm.network :forwarded_port, guest: 22, host: 2500
     config.vbguest.auto_update = true
     config.vm.network :private_network, ip: "192.168.33.10"
     config.vm.synced_folder ".", "/vagrant_data", type: "nfs"

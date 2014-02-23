@@ -1,8 +1,8 @@
-/app//shared
-/app/local-config.php
-/app/sql-dump-*.sql
-/app/db-sync
-/app/content/upgrade/
+*/app//shared
+*/app/local-config.php
+*/app/sql-dump-*.sql
+*/app/db-sync
+*/app/content/upgrade/
 .DS_Store
 *.DS_Store
 *.Thumbs.DB

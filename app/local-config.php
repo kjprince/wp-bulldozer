@@ -45,7 +45,53 @@ define( 'WP_CACHE', true );
 // 
 //=============================
 
+// =====================
+// EMPTY THE TRASH 
+//
+// define( 'EMPTY_TRASH_DAYS', 30 ); // 30 days
+//
+// =====================
 
+// =====================
+// Auto Optimize Database
+//
+// define( 'WP_ALLOW_REPAIR', true );
+//
+// =======================
+
+// =======================================================
+// Define site and blog URLs
+//
+// define( 'WP_SITEURL', 'http://example.com/wp' );
+//
+// define( 'WP_HOME', 'http://example.com' );
+//
+// =======================================================
+
+// =====================
+// Disable post revisions
+// define( 'WP_POST_REVISIONS', false );
+// ======================
+
+// ==============================
+// Force SSl for Admin and Login
+// define( 'FORCE_SSL_LOGIN', true );
+// ==================================
+
+// ====================================================
+// Disable Plugin and Theme Updating and Installation
+//
+// define( 'DISALLOW_FILE_MODS', true );
+//
+// ====================================================
+
+// ====================================
+// Disallow Editing From Dashboard
+// Disables Plugin and Theme Editor
+//
+// define('DISALLOW_FILE_EDIT', true);
+//
+// ===================
 
 // ==============================================================
 // Table prefix

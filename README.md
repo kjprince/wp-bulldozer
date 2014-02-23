@@ -1,7 +1,7 @@
 wp-bulldozer
 ============
 
-Bulldoze that shit!
+Bulldozer for wordpress development
 
 
 1. Clone this repo and cd into it.
