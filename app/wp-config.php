@@ -85,6 +85,13 @@ define( 'WP_DEBUG_DISPLAY', false );
 // define( 'SAVEQUERIES', true );
 // define( 'WP_DEBUG', true );
 
+// ===========================
+// Enable APC / Batcache
+//
+// define( 'WP_CACHE', true );
+// 
+//=============================
+
 // ======================================
 // Load a Memcached config if we have one
 // ======================================
