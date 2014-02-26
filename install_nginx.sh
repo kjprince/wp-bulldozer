@@ -1,7 +1,4 @@
-# Thank you: http://www.queryadmin.com/824/install-nginx-debian-wheezy/
-
-#!/bin/bash
- 
+#!/usr/bin/env bash
 echo "+Adding nginx repositories..."
 echo "" >> /etc/apt/sources.list
 echo "deb http://nginx.org/packages/debian/ squeeze nginx" >> /etc/apt/sources.list
