@@ -19,7 +19,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     config.vm.network :forwarded_port, guest: 22, host: 2500
     config.vbguest.auto_update = true
     config.vm.network :private_network, ip: "192.168.33.10"
-    config.vm.synced_folder ".", "/vagrant_data", type: "nfs"
+    config.vm.synced_folder "./app", "/vagrant", type: "nfs"
    
     
 
