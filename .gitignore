@@ -3,6 +3,7 @@
 */app/sql-dump-*.sql
 */app/db-sync
 */app/content/upgrade/
+*/app/info.php
 .DS_Store
 *.DS_Store
 *.Thumbs.DB

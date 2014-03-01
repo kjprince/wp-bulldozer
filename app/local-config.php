@@ -16,6 +16,12 @@ define( 'DB_HOST', 'localhost:/var/run/mysqld/mysqld.sock' ); // Probably 'local
 define('DB_CHARSET', 'utf8');
 define('DB_COLLATE', '');
 
+// =======================================================
+// DEFINE SITE AND BLOG URLS - IMPORTANT!
+// =======================================================
+define( 'WP_SITEURL', 'http://wordpress.dev/wp' );
+define( 'WP_HOME', 'http://wordpress.dev/' );
+
 // ========================
 // Custom Content Directory
 // ========================
@@ -31,18 +37,18 @@ $table_prefix  = 'rs1_';
 // ======================
 // ENABLE MULTISITE? 
 // ======================
-// define('WP_ALLOW_MULTISITE', true);
+define('WP_ALLOW_MULTISITE', true);
 
 // ====================
 // SETUP MULTISITE 
 // ====================
-// define('MULTISITE', true);
-// define('SUBDOMAIN_INSTALL', true);
-// $base = '/';
-// define('DOMAIN_CURRENT_SITE', 'wordpress.dev');
-// define('PATH_CURRENT_SITE', '/');
-// define('SITE_ID_CURRENT_SITE', 1);
-// define('BLOG_ID_CURRENT_SITE', 1);
+define('MULTISITE', true);
+define('SUBDOMAIN_INSTALL', true);
+$base = '/';
+define('DOMAIN_CURRENT_SITE', 'wordpress.dev');
+define('PATH_CURRENT_SITE', '/');
+define('SITE_ID_CURRENT_SITE', 1);
+define('BLOG_ID_CURRENT_SITE', 1);
 
 // ================================
 // Enable CACHING - Batcache / APC
@@ -52,7 +58,7 @@ define( 'WP_CACHE', true );
 // ====================================
 // ENABLE MULTI SITE DOMAIN MAPPING
 // ====================================
-// define( 'SUNRISE', 'on' );
+define( 'SUNRISE', 'on' );
 
 // =======================
 // Define Memory Limit
@@ -70,11 +76,7 @@ define('WP_MAX_MEMORY_LIMIT', '128M');
 // =======================
 // define( 'WP_ALLOW_REPAIR', true );
 
-// =======================================================
-// DEFINE SITE AND BLOG URLS - IMPORTANT!
-// =======================================================
-define( 'WP_SITEURL', 'http://wordpress.dev/wp' );
-define( 'WP_HOME', 'http://wordpress.dev' );
+
 
 // ==========================
 // DISABLE POST REVISIONS
