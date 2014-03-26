@@ -3,7 +3,9 @@ User-agent: *
 # ------------------------------------------------------------------------
 # WORDPRESS
 # ------------------------------------------------------------------------
- 
+
+Disallow: */wp/wp-admin
+Disallow: */wp/wp-includes
 Disallow: /cgi-bin
 Disallow: /wp-*
 Disallow: /trackback
